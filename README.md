@@ -28,6 +28,15 @@ HELMS is a hypergraph evolving lifelong memory system designed for traffic predi
 
 Datasets (PeMS04, PeMS08, and PeMS-BAY) are available at [Google Drive](https://drive.google.com/file/d/1G2Ff7ZpxoHAxbcitDH3UXde-H9TH6u57/view?usp=sharing).
 
+## 🤖 Pretrained Models
+
+Before running the code, please download the following two model folders from Google Drive and place them in the project workspace.
+
+| Model | Usage | Download Link |
+| :--- | :--- | :--- |
+| `all-MiniLM-L6-v2` | Sentence embedding model for semantic memory retrieval | [all-MiniLM-L6-v2](https://drive.google.com/file/d/1RU61m9qlqLKi6uaB94VPWjH88N8GCZPU/view?usp=sharing) |
+| `Qwen2.5-1.5B-Instruct` | Large language model for semantic annotation and interpretation | [qwen2.5-1.5b-instruct](https://drive.google.com/file/d/1RU61m9qlqLKi6uaB94VPWjH88N8GCZPU/view?usp=sharing) |
+
 ## 📁 Project Structure
 
 ```plaintext
