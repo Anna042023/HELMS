@@ -30,6 +30,7 @@ Datasets (PeMS04, PeMS08, and PeMS-BAY) are available at [Google Drive](https://
 
 ## 📁 Project Structure
 
+```plaintext
 HELMS/
 ├── 📄 README.md
 ├── 🖼️ HELMS.jpg                         # Overall architecture figure
@@ -63,6 +64,7 @@ HELMS/
     ├── scaler.py                        # Data normalization
     ├── seed.py                          # Random seed setting
     └── semantic_utils.py                # Semantic embedding and LLM-based annotation
+```
 
 ## 🚀 Usage
 
