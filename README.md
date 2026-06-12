@@ -24,6 +24,46 @@ HELMS is a hypergraph evolving lifelong memory system designed for traffic predi
 
 **Memory-enhanced Spatio-temporal Prediction Framework:** HELMS introduces retrievable long-term memory into conventional spatio-temporal graph prediction models. As a result, the model does not rely solely on the current input window, but can also retrieve similar historical traffic patterns, improving prediction stability and long-horizon forecasting capability in complex traffic scenarios.
 
+## Datasets
+
+Datasets (PeMS04, PeMS08, and PeMS-BAY) are available at [Google Drive](https://drive.google.com/file/d/1G2Ff7ZpxoHAxbcitDH3UXde-H9TH6u57/view?usp=sharing).
+
+## 📁 Project Structure
+
+HELMS/
+├── 📄 README.md
+├── 🖼️ HELMS.jpg                         # Overall architecture figure
+├── 🚀 main.py                           # Main entry for training and evaluation
+│
+├── ⚙️ configs/                          # Configuration files
+│   └── config.yaml                      # Model, memory, training, and dataset settings
+│
+├── 🗂️ datasets/                         # Data loading and preprocessing code
+│   ├── __init__.py
+│   ├── data_utils.py                    # Data loading and adjacency construction
+│   └── traffic_dataset.py               # Traffic dataset preprocessing
+│
+├── 🧠 models/                           # Model components
+│   ├── __init__.py
+│   ├── helms.py                         # Main HELMS model
+│   ├── st_gnn.py                        # Spatio-temporal graph encoder
+│   ├── hypergraph_memory.py             # Hypergraph memory database
+│   ├── dml.py                           # Differentiable memory lifecycle management
+│   └── dynamic_graph.py                 # Dynamic graph construction
+│
+├── 🚆 train/                            # Training and evaluation pipeline
+│   ├── __init__.py
+│   └── train_helms.py                   # Training, validation, testing, and result saving
+│
+├── 🛠️ utils/                            # Utility functions
+    ├── __init__.py
+    ├── calibration.py                   # Validation-based prediction calibration
+    ├── clustering.py                    # Memory prototype clustering
+    ├── metrics.py                       # MAE, RMSE, and MAPE
+    ├── scaler.py                        # Data normalization
+    ├── seed.py                          # Random seed setting
+    └── semantic_utils.py                # Semantic embedding and LLM-based annotation
+
 ## 🚀 Usage
 
 ### 📦 Requirements
