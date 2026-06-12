@@ -75,16 +75,19 @@ torch>=1.12.0
 numpy>=1.21.0
 pandas>=1.3.0
 scikit-learn>=1.0.0
+scipy>=1.7.0
 PyYAML>=6.0
 h5py>=3.6.0
+tables>=3.7.0
 openpyxl>=3.0.0
 xlrd>=2.0.0
 tqdm>=4.60.0
+matplotlib>=3.5.0
 sentence-transformers>=2.2.0
 transformers>=4.37.0
 accelerate>=0.26.0
 safetensors>=0.4.0
-matplotlib>=3.5.0
+huggingface-hub>=0.20.0
 ```
 
 ### 🧪 Running Experiments
