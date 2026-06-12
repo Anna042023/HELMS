@@ -1,4 +1,4 @@
-# 🧠 HELMS: Hypergraph Evolving Lifelong Memory System for Traffic Prediction with Semantic Regularization
+# HELMS: Hypergraph Evolving Lifelong Memory System for Traffic Prediction with Semantic Regularization
 
 <img src="https://img.shields.io/badge/Paper-ICDE-blue" alt="Paper">  <img src="https://img.shields.io/badge/Dataset-Public-green" alt="Dataset">
 
@@ -103,6 +103,12 @@ huggingface-hub>=0.20.0
 
 ```plaintext
 python main.py --experiment table2 --dataset PEMS04 --root_path /xx/xx/datasets/ --batch_size 16
+```
+
+```plaintext
 python main.py --experiment table2 --dataset PEMS08 --root_path /xx/xx/datasets/ --batch_size 16
+```
+
+```plaintext
 python main.py --experiment table3 --dataset PEMS-BAY --root_path /xx/xx/datasets/ --batch_size 16
 ```
