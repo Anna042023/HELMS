@@ -24,7 +24,7 @@ HELMS is a hypergraph evolving lifelong memory system designed for traffic predi
 
 **Memory-enhanced Spatio-temporal Prediction Framework:** HELMS introduces retrievable long-term memory into conventional spatio-temporal graph prediction models. As a result, the model does not rely solely on the current input window, but can also retrieve similar historical traffic patterns, improving prediction stability and long-horizon forecasting capability in complex traffic scenarios.
 
-## Datasets
+## 📊 Datasets
 
 Datasets (PeMS04, PeMS08, and PeMS-BAY) are available at [Google Drive](https://drive.google.com/file/d/1G2Ff7ZpxoHAxbcitDH3UXde-H9TH6u57/view?usp=sharing).
 
@@ -52,7 +52,7 @@ HELMS/
 │   ├── dml.py                           # Differentiable memory lifecycle management
 │   └── dynamic_graph.py                 # Dynamic graph construction
 │
-├── 🚆 train/                            # Training and evaluation pipeline
+├── 🏋️ train/                            # Training and evaluation pipeline
 │   ├── __init__.py
 │   └── train_helms.py                   # Training, validation, testing, and result saving
 │
