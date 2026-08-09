@@ -41,10 +41,6 @@ Before running the code, please download the following two model folders from Go
 
 ```plaintext
 HELMS/
-├── 📄 README.md
-├── 🖼️ HELMS.jpg                         # Overall architecture figure
-├── 🚀 main.py                           # Main entry for training and evaluation
-│
 ├── ⚙️ configs/                          # Configuration files
 │   └── config.yaml                      # Model, memory, training, and dataset settings
 │
@@ -66,14 +62,31 @@ HELMS/
 │   └── train_helms.py                   # Training, validation, testing, and result saving
 │
 ├── 🛠️ utils/                            # Utility functions
-    ├── __init__.py
-    ├── calibration.py                   # Validation-based prediction calibration
-    ├── clustering.py                    # Memory prototype clustering
-    ├── metrics.py                       # MAE, RMSE, and MAPE
-    ├── scaler.py                        # Data normalization
-    ├── seed.py                          # Random seed setting
-    └── semantic_utils.py                # Semantic embedding and LLM-based annotation
+│   ├── __init__.py
+│   ├── calibration.py                   # Validation-based prediction calibration
+│   ├── clustering.py                    # Memory prototype clustering
+│   ├── metrics.py                       # MAE, RMSE, and MAPE
+│   ├── scaler.py                        # Data normalization
+│   ├── seed.py                          # Random seed setting
+│   └── semantic_utils.py                # Semantic embedding and LLM-based annotation
+│
+├── 📄 README.md
+├── 🖼️ HELMS.jpg                         # Overall architecture figure
+├── 🚀 main.py                           # Main entry for training and evaluation
+├── 🧪 ablation.py                       # Ablation study: w/o HMC, w/o DML, and w/o SR
+├── 🎯 few_shot.py                       # Few-shot learning under different data ratios
+├── 🌐 zero_shot.py                      # Cross-dataset zero-shot transfer evaluation
+├── 🔬 sensi.py                          # Parameter sensitivity analysis for K, τ, and m
+├── 📉 concept_drift_v8.py               # Concept-drift injection and online adaptation analysis
+├── 📈 case_study_24h.py                 # 24-hour node-level prediction case study
+├── 🧩 tsne.py                           # t-SNE visualization of learned memory prototypes
+├── 📊 fig6_v6_raincloud_deep_scatter_box.py
+│                                        # Structural interpretability via intra/inter-community
+│                                        # gradient sensitivity and raincloud visualization
+└── 🔥 fig9_semantic_interpretability_multi_cmap.py
+                                         # Semantic memory activation heatmap over 24 hours
 ```
+
 
 ## 🚀 Usage
 
