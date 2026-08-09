@@ -80,8 +80,7 @@ HELMS/
 ├── 📈 case_study.py                     # 24-hour node-level prediction case study
 ├── 🧩 tsne.py                           # t-SNE visualization of learned memory prototypes
 ├── 📊 fig6_v6_raincloud_deep_scatter_box.py
-│                                        # Structural interpretability via intra/inter-community
-│                                        # gradient sensitivity and raincloud visualization
+│                                        # Structural interpretability via intra/inter-community                                    
 ├── 🔥 fig9_semantic_interpretability_multi_cmap.py
 │                                        # Semantic memory activation heatmap over 24 hours
 └── 📄 README.md
