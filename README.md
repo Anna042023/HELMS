@@ -310,11 +310,13 @@ All experimental details are documented in Section V‑B of the manuscript. Key 
 
 **Equation (6) – Hypergraph propagation:**
 $$\mathbf{V}' = \sigma\left( \mathbf{D}_v^{-1} \mathbf{H}_M \mathbf{W}_e \mathbf{H}_M^\top \mathbf{V} \mathbf{W}_v \right)$$
+
 Here $\mathbf{D}_v^{-1}$ provides standard node‑degree normalization in hypergraph convolution. The learnable diagonal matrix $\mathbf{W}_e$ independently scales each hyperedge (similarity, temporal, co‑occurrence). Because $\mathbf{W}_e$ already captures hyperedge‑specific weights, a separate hyperedge‑degree normalization is redundant.
 
 **Equation (7) – Memory retrieval:**
 $$\alpha_k = \frac{ \exp( h_t^{T} v_k' / \tau ) }{ \sum_{j=1}^{K} \exp( h_t^{T} v_j' / \tau ) }$$
-The original description “top-$k$ query” is misleading because all $K$ memories technically participate in the softmax. However, with $\tau = 1.2$, the attention mass concentrates on a small number of highly relevant prototypes, effectively functioning as a soft top-$k$. We have replaced the phrase with **“soft relevance‑weighted retrieval”** and explicitly discuss the role of $\tau$.
+
+The original description “top-k query” is misleading because all $K$ memories technically participate in the softmax. However, with $\tau = 1.2$, the attention mass concentrates on a small number of highly relevant prototypes, effectively functioning as a soft top-k. We have replaced the phrase with **“soft relevance‑weighted retrieval”** and explicitly discuss the role of $\tau$.
 
 ---
 
