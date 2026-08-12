@@ -309,11 +309,13 @@ All experimental details are documented in Section V‑B of the manuscript. Key 
 ## 8. Equations (6) and (7) Clarification (R4-D8)
 
 **Equation (6) – Hypergraph propagation:**
+
 $$\mathbf{V}' = \sigma\left( \mathbf{D}_v^{-1} \mathbf{H}_M \mathbf{W}_e \mathbf{H}_M^\top \mathbf{V} \mathbf{W}_v \right)$$
 
 Here $\mathbf{D}_v^{-1}$ provides standard node‑degree normalization in hypergraph convolution. The learnable diagonal matrix $\mathbf{W}_e$ independently scales each hyperedge (similarity, temporal, co‑occurrence). Because $\mathbf{W}_e$ already captures hyperedge‑specific weights, a separate hyperedge‑degree normalization is redundant.
 
 **Equation (7) – Memory retrieval:**
+
 $$\alpha_k = \frac{ \exp( h_t^{T} v_k' / \tau ) }{ \sum_{j=1}^{K} \exp( h_t^{T} v_j' / \tau ) }$$
 
 The original description “top-k query” is misleading because all $K$ memories technically participate in the softmax. However, with $\tau = 1.2$, the attention mass concentrates on a small number of highly relevant prototypes, effectively functioning as a soft top-k. We have replaced the phrase with **“soft relevance‑weighted retrieval”** and explicitly discuss the role of $\tau$.
@@ -357,7 +359,7 @@ A step‑by‑step illustration of a single query through the full HELMS pipelin
 | 5 | Decoder | $\tilde{\mathbf{H}}_t$ | MLP produces 12‑step future predictions | $\hat{\mathcal{Y}}_{t+1:t+12} \in \mathbb{R}^{12\times 2}$ |
 | 6 | DML (utility) | Prediction loss, baseline loss, attention weights | Update utility scores of all 5 prototypes via EMA | $u_1{=}0.52$, $u_2{=}0.48$, $u_3{=}0.61$, $u_4{=}0.58$, $u_5{=}0.47$ |
 | 7 | DML (lifecycle) | $u_k$, access times, core status | Check creation ($\max\alpha=0.45>0.3$, no insertion); consolidation (prototype 3 promoted to core); forgetting (prototype 5 utility $<0.2$, removed) | Memory size updated to 4; incidence matrix adjusted |
-| 8 | SR (training) | $\mathbf{v}_i$, $\mathbf{s}_i$ for top‑$M$ pairs | Compute cosine similarity alignment loss | $\mathcal{L}_{\text{sem}} = 0.042$ |
+| 8 | SR (training) | $\mathbf{v}_i$, $\mathbf{s}_i$ for top‑M pairs | Compute cosine similarity alignment loss | $\mathcal{L}_{\text{sem}} = 0.042$ |
 
 This running example makes explicit how each query triggers a full memory lifecycle: retrieval and fusion for prediction, utility feedback for the DML controller, and, when appropriate, structural updates to the hypergraph database. The tight coupling of HMC, DML, and SR on a shared memory store is thereby concretely illustrated.
 
