@@ -1,6 +1,6 @@
 # HELMS: Hypergraph Evolving Lifelong Memory System for Traffic Prediction with Semantic Regularization
 
-<img src="https://img.shields.io/badge/Paper-ICDE-blue" alt="Paper">  <img src="https://img.shields.io/badge/Dataset-Public-green" alt="Dataset">
+<img src="https://img.shields.io/badge/Dataset-Public-green" alt="Dataset">
 
 This repository contains the official dataset and code for the paper: **"HELMS: Hypergraph Evolving Lifelong Memory System for Traffic Prediction with Semantic Regularization"**.
 
