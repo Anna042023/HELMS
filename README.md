@@ -1,8 +1,8 @@
-# HELMS: Hypergraph Evolving Lifelong Memory System for Traffic Prediction with Semantic Regularization
+# HELMS: Hypergraph-Enhanced Lifelong Memory System for Semantic Pattern Management in Traffic Prediction
 
 <img src="https://img.shields.io/badge/Dataset-Public-green" alt="Dataset">
 
-This repository contains the official dataset and code for the paper: **"HELMS: Hypergraph Evolving Lifelong Memory System for Traffic Prediction with Semantic Regularization"**.
+This repository contains the official dataset and code for the paper: **"HELMS: Hypergraph-Enhanced Lifelong Memory System for Semantic Pattern Management in Traffic Prediction"**.
 
 ## 📝 Overview
 
